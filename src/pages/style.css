@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+body {
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #010001; */
+   
+}
+
+body {
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    background: transparent;
+    color: #ffffff;
+    transition: .3s all ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 7em 0;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 9999;
+}
+
+.header .left-logo a img {
+    /* border: 2px solid black;
+    border-radius:10%; */
+    width: 90px;
+    height: 50px;
+}
+
+.header .left-logo a {
+    font-weight: 400;
+}
+
+.header .center-logo a img {
+    width: 90px;
+    height: 50px;
+}
+
+.login-button {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn {
+    padding: 2px 25px;
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn-check+.btn:hover {
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #161719;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Banner CSS Start Here */
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    clip-path: ellipse(98% 97% at 48% -1%);
+    padding-bottom: 120px;
+    padding-top: 200px;
+    height: auto;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 0;
+}
+
+/* .banner .row
+{
+    height: 600px;
+} */
+.banner .banner-left-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.banner .banner-left-text h3 {
+    font-size:50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner .banner-left-text p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    width: 420px;
+}
+
+.banner-right-text {
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+    padding: 44px 9px 12px 11px;
+    border-bottom-left-radius: 130px;
+    border-top-left-radius: 130px;
+    transform: rotate(-10deg);
+    width: 120%;
+    margin-top: -40px;
+    height: 230px;
+    overflow: hidden;
+    font-size:xx-small;
+   
+}
+
+
+
+.banner-image {
+    padding: 10px 25px;
+    transform: rotate(10deg);
+
+}
+
+.banner-image img {
+    width: 95px;
+    height: 95px;
+    margin-top: -40px;
+}
+
+.banner-image h6 {
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.banner-text {
+    border-left: 1px solid #000000;
+    padding: 10px 5px 10px 10px;
+    transform: rotate(10deg);
+}
+
+.banner-text ul li {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom:2px;
+}
+
+.button-box {
+    background-color: #ffffff70;
+    position: relative;
+    z-index: 1;
+    margin-left: 125px;
+    padding: 32px 10px 7px 31px;
+    margin-top: -40px;
+}
+
+.button-box a {
+    color: #fff;
+    background-color: #161719;
+    font-size: 17px;
+    font-weight: 500;
+    border-color: #161719;
+    padding: 3px 40px;
+}
+
+.button-box a:hover {
+    background-color: #2f3135;
+    border-color: #2f3135;
+}
+
+/* Services Boc CSS Start here */
+.services {
+    position: absolute;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.services .container {
+    max-width: 1000px;
+}
+
+.services-box {
+    /* background-color: #212830; */
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    
+   
+}
+
+/* .services-box:hover {
+    margin-top: -120px; 
+} */
+
+.services-icon {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 100%;
+    margin: 0 auto 20px auto;
+}
+
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 160vh;
+    overflow: hidden;
+  }
+
+
+  #video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+  }
+
+  .overlay-content {
+    position: absolute;   
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure it's above the video and services */
+    margin-top: 260px;
+  }
+
+  .image{
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  .image:hover{
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+  #first{
+    background-image: url(../assets/images/1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative; 
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: 50px;
+   
+  }
+  #first:hover{
+    margin-top:-10px;
+    border-radius:25px;
+  }
+  
+  #Third{
+    background-image: url(../assets/images/2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative; 
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: 50px;
+  }
+  #Third:hover{
+    margin-top:-10px;
+    border-radius:25px;
+  }
+
+  #Four{
+    background-image: url(../assets/images/4.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative; 
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  #Four:hover{
+    margin-top:-10px;
+    border-radius:25px;
+  }
+
+ 
+  .typed-cursor{
+   display: none;
+  }
+
