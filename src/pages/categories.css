@@ -1,0 +1,73 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    background: #002240;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: scroll;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    color: #fff;
+    padding: 10px 15px 10px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    background: blue;
+  }
+  
+  h2 {
+    padding: 10px 15px 10px 16px;
+    color: #fff;
+    border-bottom-style: solid;
+  }
+  
+  .content {
+    background: #002240;
+    margin-left: 15%;
+    padding: 4px 10px;
+    color: #fff;
+    display: inline-block;
+  }
+  
+  /* Making responsive */
+  @media screen and (max-width: 600px) {
+    .sidenav {
+      padding-top: 15px;
+      width: 155px;
+    }
+  
+    .sidenav a {
+      padding-left: 20px;
+      font-size: 18px;
+    }
+  
+    .content {
+      margin-left: 32%;
+      font-size: 15px;
+    }
+  
+    p {
+      display: inline-block;
+    }
+  }
+  
+
+  
+  .box-section {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: blue;
+    color :white;
+}
+

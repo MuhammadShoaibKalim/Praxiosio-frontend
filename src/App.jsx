@@ -1,14 +1,21 @@
-import Home from './pages'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Categories from './pages/Categories';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import AOS from 'aos';
-import Categories from './pages/Categories';
-   AOS.init();
+
+AOS.init();
+
 const App = () => {
   return (
-    <div>
-      <Home></Home>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
