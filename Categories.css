@@ -1,0 +1,22 @@
+
+.navbar-custom {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20220708/pngtree-futuristic-online-security-concept-with-binary-code-and-blue-background-photo-image_36744758.jpg");
+  background-size: cover;
+  background-color: rgba(11, 11, 11, 0.2); 
+  position: absolute;
+  margin-top: 3px;
+padding: 10px;
+}
+/* You can add additional styles for other elements if needed */
+
+               .navbar-custom .navbar-nav .nav-link {
+                 color: rgb(244, 234, 234);
+                  font-size: 30px;
+                  font-weight: bold;
+                }
+                
+             
+
+               
+                
+                
