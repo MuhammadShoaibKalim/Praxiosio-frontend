@@ -1,193 +1,135 @@
-import react, {useState} from 'react';
-import './categories.css';
-import { IoSearchSharp } from "react-icons/io5";
+import react from 'react'
+import { IoLanguageSharp } from "react-icons/io5";
+import { GrAssistListening } from "react-icons/gr";
+import { FaRegSave } from "react-icons/fa";
+import { CgFileRemove } from "react-icons/cg";
+import { TbReload } from "react-icons/tb";
+import { LuTestTube } from "react-icons/lu";
+
+// import {ContentCopyIcon, RecordVoiceOverIcon ,  SaveIcon,TbReload} from '@mui/icons-material/ContentCopy';
+
+import "./categories.css"
 
 const Categories = () => {
-  // State to keep track of the selected country
-  const [selectedCountry, setSelectedCountry] = useState(null);
-
-  // Function to handle click event on country links
-  const handleCountryClick = (countryId) => {
-    setSelectedCountry(countryId);
-  };
-
   return (
-    <div className='main'>
-
-
-      
-      <div className="sidenav">
-        <div className="search-container">
-          <input type='search' placeholder="Search" />
-          <IoSearchSharp className="search-icon" />
-        </div>
-        {/* Sidebar with country links */}
-        <a href="#1" onClick={() => handleCountryClick(1)}>Nepal</a>
-        <a href="#2" onClick={() => handleCountryClick(2)}>India</a>
-        <a href="#3" onClick={() => handleCountryClick(3)}>China</a>
-        <a href="#4" onClick={() => handleCountryClick(4)}>Bhutan</a>
-        <a href="#5" onClick={() => handleCountryClick(5)}>Pakis</a>
-        <a href="#6" onClick={() => handleCountryClick(6)}>Lanka</a>
-        <a href="#7" onClick={() => handleCountryClick(7)}>Nepal</a>
-        <a href="#8" onClick={() => handleCountryClick(8)}>India</a>
-        <a href="#9" onClick={() => handleCountryClick(9)}>China</a>
-        <a href="#10" onClick={() => handleCountryClick(10)}>Bhutan</a>
-        <a href="#11" onClick={() => handleCountryClick(11)}>Pakis</a>
-        <a href="#12" onClick={() => handleCountryClick(12)}>Lanka</a>
-        <div className="box-section">
-        {/* Your content for the box section */}
-        <h2>Adds Section</h2>
-        <p>This is the content of the box section.</p>
-      </div>
-      </div>
-
-      <div className="content">
-        {/* Render content based on selected country */}
-        {selectedCountry === 1 && (
-          <>
-            <h2>Nepal</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-            </p>
-          </>
-        )}
-        {selectedCountry === 2 && (
-          <>
-            <h2>India</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-            </p>
-          </>
-        )}
-        {selectedCountry === 3 && (
-          <>
-            <h2>China</h2>
-           <p>
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-           </p>
-          </>
-        )}
-       
-
-       {selectedCountry === 4 && (
-          <>
-            <h2>Nepal</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-            </p>
-          </>
-        )}
-        {selectedCountry === 5 && (
-          <>
-            <h2>India</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-            </p>
-          </>
-        )}
-        {selectedCountry === 6 && (
-          <>
-            <h2>China</h2>
-           <p>
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-           </p>
-          </>
-        )}
-
-
-{selectedCountry === 7 && (
-          <>
-            <h2>Nepal</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-   <br/>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-            </p>
-          </>
-        )}
-        {selectedCountry === 8 && (
-          <>
-            <h2>India</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-
-
-              <br/>
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-
-            </p>
-          </>
-        )}
-        {selectedCountry === 9 && (
-          <>
-            <h2>China</h2>
-           <p>
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-           </p>
-          </>
-        )}
-
-{selectedCountry === 10 && (
-          <>
-            <h2>Nepal</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-            </p>
-          </>
-        )}
-        {selectedCountry === 11 && (
-          <>
-            <h2>India</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-            </p>
-          </>
-        )}
-        {selectedCountry === 12 && (
-          <>
-            <h2>China</h2>
-           <p>
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Facere ullam et quod porro excepturi omnis, doloremque quisquam. 
-              Optio at itaque quia. Sint sequi, saepe ex dolorum aspernatur eos voluptatem modi.
-           </p>
-          </>
-        )} 
-      </div>
+    <div className='main-div'>
+           <div className='left-side-div'> 
+             <div className='search-bar-one'></div>
+             <div className='add-box-one'>
+              <h2 style={{textAlign:"center", paddingTop:"45px"}}>Adds box-1 </h2>
+             </div>
+             <div className='search-bar-two'></div>
+             <div className='add-box-two'>
+              <h2 style={{textAlign:"center", paddingTop:"125px"}}>Adds Box-2</h2>
+             </div>
+           </div>
+           <div className='right-side-div'>
+            <div className='chemicals'>
+                   <div style={{paddingLeft:"10px"}}><h2>Chemicals</h2></div>
+                    <div className='textarea'>
+                     <textarea name="textarea" id="" cols="123" rows="5"> hello</textarea>
+                  </div>
+            </div>
+            <div className='main-banner-1'>
+              <div>
+                <h2 style={{textAlign:"center", paddingTop:"24px"}}> Advertisment Box-1 </h2>
+              </div>
+            </div>
+            <div className='information-box'>
+              <div><h2 style={{color:"blue", padding:"5px"}}>Information Box</h2></div>
+              <div className='info-box'>
+                <hr />
+                <div className='chemical-name'><h4 style={{paddingLeft:"5px"}}>Chemical Name:</h4></div>
+                <div className='info-input-box'>
+                   <p>Details</p> 
+                   <p>History</p> 
+                   <p>Nature</p> 
+                   <p>Structure</p> 
+                   <p>Formula/Expression</p> 
+                   <p>Reaction</p>  
+                </div>
+              </div>
+            </div>
+            <div className='main-banner-2'>
+              <div>
+                <h2 style={{textAlign:"center", paddingTop:"24px"}}> Advertisment Box-2 </h2>
+              </div>
+            </div>
+            <div className='reaction-labs'>
+              <div className='reaction-lab'><h2> Reaction Lab</h2> </div>
+            <div className='chem-chem'>
+              <div><button>Chemical</button></div>
+                <div className='to'><p>To</p></div>
+               <div> <button>Chemical</button></div>
+              </div>
+              <div>
+                <div className='reaction-cube'> 
+                   <p> <LuTestTube style={{fontSize:"100px", marginRight:"20px"}}/></p>  
+                   <p> <LuTestTube style={{fontSize:"100px", marginRight:"20px"}}/></p> 
+                </div>
+                <div className='quantity'>
+                   <p>Qunatity 1 <input type="text" /> ML</p>
+                   <p>Qunatity 2 <input type="text" /> ML</p>
+                </div>
+              </div>
+              <p className='line'>-----------------------------</p>
+              <div className='Heat-amount'><p>Heat <input type="text" />`C</p></div>
+              <div className='chemical-add'> 
+                  <div><button>Chemical 1</button></div>
+                  <div><button>Chemical 2</button></div>
+                   <div><p>+</p></div>
+    
+              </div>
+              <div className='result'>
+                <button>Result</button> 
+              </div>
+              
+            </div>
+            <div className='main-banner-3'>
+              <div>
+                <h2 style={{textAlign:"center", paddingTop:"24px"}}> Advertisment Box-3 </h2>
+              </div>
+            </div>
+            <div className='results'>
+              <h2>Result</h2>
+            </div>
+            <div className='traslation-div'>
+               <div className='icons'>
+                <div className='icon-sign'><p><IoLanguageSharp style={{fontSize:"40px"}}/></p>
+                <p>Translate</p>
+                </div>
+                <div className='icon-sign'><p><GrAssistListening style={{fontSize:"40px"}}/></p>
+                <p>Listen</p>
+                </div>
+                <div className='icon-sign'><p><CgFileRemove style={{fontSize:"40px"}}/></p>
+                <p>Remove Plagrism </p>
+                </div>
+                <div className='icon-sign'><p><TbReload style={{fontSize:"40px"}}/></p>
+                <p>Reload</p>
+                </div>
+              </div>
+            </div> 
+            <div className='main-banner-4'>
+              <div>
+                <h2 style={{textAlign:"center", paddingTop:"24px"}}> Advertisment Box-4 </h2>
+              </div>
+            </div>
+           
+           </div>
     </div>
-  );
+  )
 }
 
-export default Categories;
+export default Categories
+
+// import SaveIcon from '@mui/icons-material/Save';
+// import { CgFileRemove } from "react-icons/cg";
+
+
+/*
+<p> <IoLanguageSharp style={{fontSize:"40px"}}/></p>
+                <p> <GrAssistListening style={{fontSize:"40px"}}/></p>
+                <p><FaRegSave style={{fontSize:"40px"}}/></p> 
+                <p><CgFileRemove style={{fontSize:"40px"}}/></p> 
+                <p><TbReload style={{fontSize:"40px"}}/></p>
+*/ 

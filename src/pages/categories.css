@@ -1,73 +1,290 @@
-body {
-    font-family: "Lato", sans-serif;
-  }
-  
-  .sidenav {
-    background: #002240;
-    position: fixed;
-    height: 100%;
-    width: 15%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow-x: scroll;
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    color: #fff;
-    padding: 10px 15px 10px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    background: blue;
-  }
-  
-  h2 {
-    padding: 10px 15px 10px 16px;
-    color: #fff;
-    border-bottom-style: solid;
-  }
-  
-  .content {
-    background: #002240;
-    margin-left: 15%;
-    padding: 4px 10px;
-    color: #fff;
-    display: inline-block;
-  }
-  
-  /* Making responsive */
-  @media screen and (max-width: 600px) {
-    .sidenav {
-      padding-top: 15px;
-      width: 155px;
-    }
-  
-    .sidenav a {
-      padding-left: 20px;
-      font-size: 18px;
-    }
-  
-    .content {
-      margin-left: 32%;
-      font-size: 15px;
-    }
-  
-    p {
-      display: inline-block;
-    }
-  }
-  
+.main-div{
+  display: flex;
+  height: 170vh;
+  width:100%;
 
+}
+.left-side-div{
+    justify-content: center;
+    align-items: center;
+    height: 350vh;
+    width: 20%;
+    background-color: grey;
+    padding: 5px;
+   
+}
+.search-bar-one{
+   flex:auto;
+   height: 120vh; 
+   border: 2px solid white; 
+   width: 100%;
+}
+
+.add-box-one{
+  flex:auto;
+  height: 50vh;
+  border: 2px solid white;
+  width: 100%;
+  margin-top: 4px;
+  background: #000;
+}
+
+.search-bar-two{
+  flex:auto;
+  height: 120vh;
+  border: 2px solid white;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.add-box-two{
+  flex:auto;
+  height: 50vh;
+  border: 2px solid white;
+  width: 100%;
+  margin-top: 4px;
+  background: #000;
+}
+
+
+.right-side-div{
+  width: 80%;
+  height: 350vh;
+  align-items: center;
+  background: blue;
   
-  .box-section {
-	margin-top: 20px;
-	padding: 20px;
-	background-color: blue;
-    color :white;
+}
+
+.chemicals{
+    border: 2px solid white;
+    width: 80%; 
+    height: 40vh;
+    border-radius: 4px;
+    flex: auto;
+    background: #000;
+    margin-top: 4px;
+    margin-left: 130px;
+    margin-right: 5px;
+}
+
+.main-banner-1{
+  border: 2px solid white; 
+  height: 40vh;
+  border-radius: 4px;
+  flex: auto;
+  background: #000;
+  margin-top: 4px;
+  margin-right: 5px;
+  margin-left: 175px;
+  width: 70%;
+}
+
+.information-box{
+  border: 2px solid white;
+  width: 80%; 
+  height: 40vh;
+  border-radius: 4px;
+  flex: auto;
+  background: #000;
+  margin-top: 7px;
+  margin-left: 130px;
+  margin-right: 5px;
+}
+.info-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.info-input-box{
+ display: inline-flex;
+ 
+ 
+}
+.info-input-box p{
+  margin-left: 50px;
+  padding: 3px;
+ }
+ .main-banner-2{
+  border: 2px solid white; 
+  height: 40vh;
+  border-radius: 4px;
+  flex: auto;
+  background: #000;
+  margin-top: 4px;
+  margin-right: 5px;
+  margin-left: 175px;
+  width: 70%;
+}
+.reaction-labs{
+    border: 2px solid white;
+    width: 80%; 
+    height: 60vh;
+    border-radius: 4px;
+    flex: auto;
+    background: #000;
+    margin-top: 7px;
+    margin-left: 130px;
+    margin-right: 5px;
+  }
+ .reaction-lab h2{
+  padding: 10px 0 0 10px;
+ }
+  .chem-chem{
+    display: flex;
+    /* justify-content: space-evenly; */
+      justify-content: center;
+     
+  }
+  .chem-chem button{
+     border: 1px solid white;
+     border-radius: 5%;
+     font-weight: bold;
+  }
+.chem-chem p{
+  margin: 2px 32px 10px 43px;
+}
+
+.reaction-cube{
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-evenly; */
+}
+.reaction-cube p{
+  margin: 12px 32px 13px 43px;
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+ 
+  /* justify-content: space-evenly; */
+}
+
+.quantity p{
+  margin: 12px 32px 13px 43px;
+  padding-left:2px ;
+  font-size: 15px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 4%;
+  color: black;
+
+}
+
+.quantity input{
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  color: black;
+}
+.line{
+  color: white;
+  text-align: center;
+  font-size:13px;
+  padding-top: 2px;
+}
+
+.Heat-amount {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.Heat-amount input{
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  color: black;
+}
+.chemical-add {
+  display: flex;
+  flex-direction: row; 
+}
+.chemical-add button{
+  border: 1px solid white;
+  border-radius: 5%;
+  font-weight: bold;
+  margin-left: 20px;
+  /* font-size: 20px; */
+}
+.chemical-add p{
+  font-size: 30px;
+  font-weight: bold; 
+  margin-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.result {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+
+}
+.result button{
+  margin-left: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 5%;
+  margin-right: 10px;
+}
+
+.main-banner-3{
+  border: 2px solid white; 
+  height: 40vh;
+  border-radius: 4px;
+  flex: auto;
+  background: #000;
+  margin-top: 4px;
+  margin-right: 5px;
+  margin-left: 175px;
+  width: 70%;
+}
+.results{
+  border: 2px solid white;
+  width: 80%; 
+  height: 35vh;
+  border-radius: 4px;
+  flex: auto;
+  background: #000;
+  margin-top: 7px;
+  margin-left: 130px;
+  margin-right: 5px;
+}
+
+
+.traslation-div{
+  border: 2px solid white; 
+  height: 17vh;
+  border-radius: 4px;
+  flex: auto;
+  background: #000;
+  margin-top: 2px;
+  margin-right: 5px;
+  margin-left: 100px;
+  width: 85%;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+.cons p{
+  flex-direction: row;
+}
+.icon-sign p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-banner-4{
+  border: 2px solid white; 
+  height: 30vh;
+  border-radius: 4px;
+  flex: auto;
+  background: #000;
+  margin-top: 4px;
+  margin-right: 5px;
+  margin-left: 175px;
+  width: 70%;
 }
 
