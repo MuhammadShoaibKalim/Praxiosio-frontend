@@ -1,0 +1,242 @@
+body{
+  background-color: gray;
+
+}
+
+/* Search bar styling */
+.searchbar {
+  background-color: rgb(8, 2, 2);
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 700px;
+
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input[type="text"] {
+  padding: 8px 30px 8px 8px; /* Add padding for the icon */
+  margin-bottom: 10px;
+  width: 100%;
+  
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-container2 {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+
+.search-container2 input[type="text"] {
+  padding: 8px 30px 8px 8px; /* Add padding for the icon */
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+
+
+.search-icon2 {
+  position: absolute;
+  right: 130px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.searchbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchbar ul li {
+  margin-bottom: 5px;
+}
+
+.searchbar ul li a {
+  text-decoration: none;
+  color: rgb(254, 254, 254);
+}
+
+/* Links styling */
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.links nav {
+  padding: 20px;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.links ul li {
+  flex-grow: 1;
+  text-align: center;
+
+}
+
+.links ul li a {
+  color: rgb(254, 253, 253); /* Change the color of the links */
+  text-decoration: none; 
+  margin-left: 40px;
+}
+
+.links ul li:first-child {
+  text-align: left;
+  margin-left: auto;
+}
+
+.links ul li:last-child {
+  text-align: right;
+  margin-right: auto;
+}
+
+/* Common styling */
+section {
+  background-color: rgb(255, 252, 252);
+  color: white;
+  width: 90%;
+  display: flex;
+  margin: 70px;
+  border: 2px solid rgb(254, 251, 251);
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background-color: rgb(4, 3, 4);
+  color: white;
+  margin: 3px;
+  margin-bottom: 0px;
+  height: max-content;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Center the card */
+  text-align: center;
+}
+
+
+.main-box{
+  width: 800px;
+  height: 60px;
+  border: 2px solid  rgb(249, 249, 251);
+  margin: 20px;
+}
+
+.card {
+ background:  rgba(43, 11, 156, 0.2); 
+  color:white;
+  width: 800px;
+  height: 300px;
+  border: 2px solid rgb(43, 11, 156);
+  margin-top: 20px;
+  border-radius: 20px;
+ 
+}
+
+.card2 {
+ background: rgb(3, 1, 1); 
+  color:rgb(254, 253, 253);
+  width: 1150px;
+  height: 140px;
+  border: 2px solid rgb(252, 252, 255);
+  margin-top: 10px;
+  border-radius: 2px;
+  margin-bottom: 40px ;
+}
+.card3 {
+  background: rgba(4, 53, 23, 0.5);
+  color:white;
+  width: 800px;
+  height: 300px;
+  border: 2px solid rgba(7, 139, 58, 0.5);
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.card4 {
+  background: rgba(53, 21, 4, 0.5);
+  color:white;
+  width: 800px;
+  height: 330px;
+  border: 2px solid rgba(209, 73, 10, 0.5);
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+ 
+}
+
+
+.ads {
+  color: white;
+  width: 600px;
+  height: 200px;
+  border: 2px solid white;
+  margin:20px ;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+}
+
+
+.info {
+  margin-bottom: 0px;
+  justify-content: start;
+  align-self: flex-start;
+  text-align: start;
+  padding-left: 210px;
+}
+
+.react {
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  margin: 5px 0px 0px 5px;
+}
+.plus {
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  margin: 5px 0px 0px 5px;
+}
+
+.inner{
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.inner h5{
+  margin-left: 10px;
+  background-color: rgba(19, 216, 95, 0.5);
+  border-radius: 5px;
+  margin-bottom: 0px;
+  border:1px solid rgba(7, 139, 58, 0.5) ;
+  
+}
